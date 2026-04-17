@@ -1,1 +1,17 @@
-# program 1
+import tkinter
+
+class My_GUI:
+
+   def __init__(self):
+       self.main_window = tkinter.Tk()
+       self.main_window.title('My Favorite saying')
+
+       label = tkinter.Label(self.main_window, text='My Favorite saying is, \n Do not be anxious about anything, \n but in every situation, \n by prayer and petition, \n with thanksgiving, \n present your requests to God. \n And the peace of God, \n which transcends all understanding, \n will guard your hearts and your minds in Christ Jesus.')
+       label.pack(expand = True)
+
+       self.main_window.mainloop()
+
+if __name__ == '__main__':
+    gui = My_GUI()
+
+
